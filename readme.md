@@ -24,19 +24,21 @@ Getting started
 -----------
 
  **Machine set up**
- * Install node for you machine: [http://nodejs.org](http://nodejs.org)
- * Install Gulp: `sudo npm install --global gulp`
+ If you don't have the following already.
+ * Install node for on your machine: [http://nodejs.org](http://nodejs.org)
+ * Install Gulp globally: `sudo npm install --global gulp`
 
  **Using this on a project**
- * Clone this repo
+ * Clone this repo to start a new project and name it
  * Get npm to install the project dependencies `npm install`
- * When ready run `gulp` any you are away
+ * When ready run `gulp` any you are away, the server will start
 
 The workflow
 -----------
 
-You add your file and make edit inside of the `app/src` folder this is your working environment. The `app/dist` folder is your production code designed to be efficient for the browser.
+You add your file and make edit inside of the `app/src` folder this is your working environment. The `app/dist` folder is your production code designed to be efficient for the browser, although it will come with source maps.
 
+**Simple flow**
 Make human friendly code in `app/src` -> see browser friendly output in `app/dis` for use in the production enviroment.
 
 Troubleshooting
