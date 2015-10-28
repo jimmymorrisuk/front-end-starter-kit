@@ -1,7 +1,7 @@
 Gulp Front end starter kit
 =======
 
-A starter kit to bootstrap front end projects, lightweight enough to be reusable, helpfully enough to give you a boost, at the start. 
+A starter kit to bootstrap front end projects, lightweight enough to be reusable, helpfully enough to give you a boost, at the start rather than having to set up the same things every time. 
 
 There are two main purposes to this kit. One is to create a general workflow managed by Gulp to automate tasks. The other is to provide a project bootstrap to speed up starting a project in ensure conventions are followed (of course these can be removed to suit).
 
