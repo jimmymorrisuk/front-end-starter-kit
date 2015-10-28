@@ -37,7 +37,7 @@ The workflow
 
 You add your file and make edit inside of the `app/src` folder this is your working environment. The `app/dist` folder is your production code designed to be efficient for the browser.
 
-Make human friendly code in `app/src` -> see browser friendly output in `app/dis`
+Make human friendly code in `app/src` -> see browser friendly output in `app/dis` for use in the production enviroment.
 
 Troubleshooting
 -----------
