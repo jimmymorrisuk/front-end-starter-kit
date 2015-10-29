@@ -43,7 +43,7 @@ gulp.task('serve', ['sass','markup','scripts', 'images', 'fonts'], function() {
     gulp.watch(source + "/js/**/*.js", ['scripts']).on('change', browserSync.reload);
     gulp.watch(source + "/*.html", ['markup']).on('change', browserSync.reload);
     gulp.watch(source + "/fonts/**", ['fonts']).on('change', browserSync.reload);
-    gulp.watch(source + "/img/**", ['fonts']).on('change', browserSync.reload);
+    gulp.watch(source + "/img/**", ['images']).on('change', browserSync.reload);
 });
 
 // Sass task

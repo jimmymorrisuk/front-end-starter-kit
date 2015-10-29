@@ -25,10 +25,12 @@ Getting started
 
  **Machine set up**
  If you don't have the following already.
+
  * Install node for on your machine: [http://nodejs.org](http://nodejs.org)
  * Install Gulp globally: `sudo npm install --global gulp`
 
  **Using this on a project**
+ 
  * Clone this repo to start a new project and name it
  * Get npm to install the project dependencies `npm install`
  * When ready run `gulp` any you are away, the server will start
