@@ -1,0 +1,51 @@
+/**
+ * Author(s): James Morris
+ * Typography
+ * 
+ * Top level typographic elements
+ * 
+ */
+
+@import "base/_variables";
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: $heading-l-height;
+    margin-top: 0;
+    font-family: $font-ubuntu;
+}
+
+//Masquerading h2 as a h1
+h2.h1 {
+    font-size: $size-xl;
+}
+
+h2 {
+    font-size: $size-l;
+}
+
+h3 {
+    font-size: $size-ml;
+}
+
+h4, h5, h6 {
+    font-size: $size-m;
+}
+
+p, 
+main,
+section,
+header,
+footer {
+    font-size: $size-ss;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    &:hover {
+        transition: color 0.3s ease, border-color 0.3s ease;
+    }
+}
+

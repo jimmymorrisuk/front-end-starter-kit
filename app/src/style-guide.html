@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Front end starter kit</title>
+        <link rel="stylesheet" type="text/css" href="css/site.min.css">
+        <!-- Front end starter kit theme - Remove this -->
+        <link rel="stylesheet" type="text/css" href="css/starter-kit-theme/site.min.css">
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="/">
+                        <h1>Front end starter kit</h1>
+                    </a>
+                </div>
+                <nav class="site-navigation">
+                    <ul>
+                        <li><a href="/styleguide.html">Style guide</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="page-body">
+            <section id="typo" class="typography">
+                <div class="wrapper">
+                    <div class="row">
+                        <h2>Typography</h2>
+                        <div class="row">
+                            <h1>This is a 1st level heading</h1>
+                            <p>This is a test paragraph.</p>
+                            <h2>This is 2nd level heading</h2>
+                            <p>This is a test paragraph.</p>
+                            <h3>This is 3rd level heading</h3>
+                            <p>This is a test paragraph.</p>
+                            <h4>This is 4th level heading</h4>
+                            <p>This is a test paragraph.</p>
+                            <h5>This is 5th level heading</h5>
+                            <p>This is a test paragraph.</p>
+                            <h6>This is 6th level heading</h6>
+                            <p>This is a test paragraph.</p>
+                        </div>
+                        <div class="colours">
+                            <h2>Colour Palette</h2>
+                            <p>The core colour palette as found in the variables.less file.</p>
+                            <ul>
+                                <li class="one">Colour Primary  <span>Forrest Green #00940a</span></li>
+                                <li class="two">Colour Secondary <span>Water blue #0095db</span></li>
+                                <li class="three">Colour Tertiary <span>Pine needles #cba354</span></li>
+                                <li class="four">Colour Off Black <span>Copy colour #33333</span></li>
+                                <li class="five">Colour Grey <span>Ash #fafafa</span></li>
+                                <li class="six">Colour Link <span>Pine cones #7a5000</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="lists" class="lists">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="span12">
+                            <h2>Lists</h2>
+                            <p>Here we have three lists that consist of the <code>&lt;ul&gt;</code> an unordered list, <code>&lt;ol&gt;</code> an ordered list and <code>&lt;dl&gt;</code> a description list. You can style these to show how you're standard lists will look.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span3">
+                            <h3>Unordered</h3>
+                            <ul>
+                                <li> One.</li>
+                                <li> Two.</li>
+                                <li> Three. Well, probably this list item should be longer. Note that
+                                    for short items lists look better if they are compactly presented,
+                                    whereas for long items, it would be better to have more vertical spacing between items.
+                                </li>
+                                <li> Four. This is the last item in this list.
+                                    Let us terminate the list now without making any more fuss about it.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="span3">
+                            <h3>Ordered</h3>
+                            <ol>
+                                <li> One.</li>
+                                <li> Two.</li>
+                                <li> Three. Well, probably this list item should be longer. Note that if items are short, lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.
+                                </li>
+                                <li> Four. This is the last item in this list.
+                                    Let us terminate the list now without making any more fuss about it.
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="span3">
+                            <h3>Descripiton</h3>
+                            <dl class="coffee">
+                                <dt>Espresso</dt>
+                                <dd>Espresso is a strong black coffee</dd>
+                                <dt>Cappuccino</dt>
+                                <dd>A true cappuccino is a combination of equal parts espresso, steamed milk and milk froth</dd>
+                                <dt> Americano</dt>
+                                <dd>An Americano is a single shot of espresso added to a cup of hot water</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="links" class="wrapper links">
+                <div class="row">
+                    <div class="span8">
+                        <h2>Text links</h2>
+                        <ul>
+                            <li> <a href="/">This page</a> </li>
+                            <li> <a href="http://twitter.com/bunnyfootsays">Follow Bunnyfoot on Twiter</a> </li>
+                            <li> <a href="http://twitter.com/jimmymorrisuk"
+                                title="JimmyMorrisUK on Twitter" target="_blank"
+                                >Follow JimmyMorrisUK on Twitter</a> </li>
+                        </ul>
+                        <p> This is paragraph of text that contains some <a href="/">links</a>. It's here to give you and idea of <a href="">what you're links might look like</a> in the middle of some copy.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="images" class="images">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="span12">
+                            <h2>Images</h2>
+                            <p>A picture paints a thousand words</p>
+                        </div>
+                        <figure class="image-text">
+                            <img src="http://lorempixel.com/1000/600/abstract" alt="" />
+                            <figcaption>Images, images, images.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section id="text-mark-up" class="wrapper mark-up">
+                <div class="row">
+                    <div class="span9">
+                        <h2>Text-level markup</h2>
+                        <ul>
+                            <li> <abbr title="Cascading Style Sheets">CSS</abbr> (an abbreviation;
+                                <code>abbr</code> markup used) 
+                            </li>
+                            <li> <abbr>Adj. - An abbreviation for adjective.</abbr></li>
+                            <li> <b>bolded</b> (<code>b</code> markup used - just bolding with unspecified
+                                semantics)
+                            </li>
+                            <li> <cite>Origin of Species</cite> (a book title;
+                                <code>cite</code> markup used)
+                            </li>
+                            <li> <code>a[i] = b[i] + c[i);</code> (computer code; <code>code</code> markup used)</li>
+                            <li> here we have some <del>deleted</del> text (<code>del</code> markup used)</li>
+                            <li> an <dfn>octet</dfn> is an entity consisting of eight bits
+                                (<code>dfn</code> markup used for the term being defined)
+                            </li>
+                            <li> this is <em>very</em> simple (<code>em</code> markup used for emphasizing
+                                a word)
+                            </li>
+                            <li> <i lang="la">Homo sapiens</i> (should appear in italics;  <code>i</code> markup used)</li>
+                            <li> here we have some <ins>inserted</ins> text (<code>ins</code> markup used)</li>
+                            <li> type <kbd>yes</kbd> when prompted for an answer (<code>kbd</code> markup
+                                used for text indicating keyboard input)
+                            </li>
+                            <li> <q>Hello!</q> (<code>q</code> markup used for quotation)</li>
+                            <li> He said: <q>She said <q>Hello!</q></q> (a quotation inside a quotation)</li>
+                            <li> you may get the message <samp>Core dumped</samp> at times
+                                (<code>samp</code> markup used for sample output)
+                            </li>
+                            <li> <small>this is not that important</small> (<code>small</code> markup used)</li>
+                            <li> <strong>this is highlighted text</strong> (<code>strong</code>
+                                markup used)
+                            </li>
+                            <li> In order to test how subscripts and superscripts (<code>sub</code> and
+                                <code>sup</code> markup) work inside running text, we need some
+                                dummy text around constructs like x<sub>1</sub> and H<sub>2</sub>O
+                                (where subscripts occur). So here is some fill so that
+                                you will (hopefully) see whether and how badly the subscripts
+                                and superscripts mess up vertical spacing between lines.
+                                Now superscripts: M<sup>lle</sup>, 1<sup>st</sup>, and then some
+                                mathematical notations: e<sup>x</sup>, sin<sup>2</sup> <i>x</i>,
+                                and some nested superscripts (exponents) too:
+                                e<sup>x<sup>2</sup></sup> and f(x)<sup>g(x)<sup>a+b+c</sup></sup>
+                                (where 2 and a+b+c should appear as exponents of exponents).
+                            </li>
+                            <li> <u>underlined</u> text (<code>u</code> markup used)</li>
+                            <li> the command <code>cat</code> <var>filename</var> displays the
+                                file specified by the <var>filename</var> (<code>var</code> markup
+                                used to indicate a word as a variable).
+                            </li>
+                            <li>
+                                <data value="2000">Lots of sugar.</data>
+                                The <code>data</code> tag. 
+                            </li>
+                            <li> <time>20:35</time> A great <code>time</code> to meet. </li>
+                            <li> <mark>Highlighted</mark> using the <code>mark</code> tag.</li>
+                            <li>
+                                Here we have an example of the <code>address</code> tag, great for semantics. 
+                                <address>
+                                    A name,
+                                    A street,
+                                    A city,
+                                    A postcode 
+                                </address>
+                            </li>
+                            <li>
+                                A <code>blockquote</code> example in action.
+                                <blockquote>Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</blockquote>
+                            </li>
+                        </ul>
+                        <p>Some of the elements tested above are typically displayed in a monospace
+                            font, often using the <em>same</em> presentation for all of them. This
+                            tests whether that is the case on your browser:
+                        </p>
+                        <ul>
+                            <li> <code>This is sample text inside code markup</code></li>
+                            <li> <kbd>This is sample text inside kbd markup</kbd></li>
+                            <li> <samp>This is sample text inside samp markup</samp></li>
+                        </ul>
+                    </div>
+                    <aside class="span3">
+                        <h4>This is an aside</h4>
+                    </aside>
+                </div>
+            </section>
+            <section id="forms" class="wrapper forms">
+                <div class="row">
+                    <div class="span6">
+                        <h2>Forms</h2>
+                        <form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+                            <div>
+                                <input type="hidden" name="hidden field" value="42">
+                                <span>This is a form containing various fields (with some initial values (defaults) set, so that you can see how input text looks like without actually typing it):</span>
+                            </div>
+                            <div><label for="but">Button:
+                                <button id="but" type="submit" name="foo" value="bar">A cool button</button></label>
+                            </div>
+                            <div><label for="f0">Reset button:
+                                <input id="f0" type="reset" name="reset" value="Reset"></label>
+                            </div>
+                            <div><label for="f1">Single-line text input field: <input id="f1" type="text" name="text" size="20" value="Default text."></label></div>
+                            <div><label for="f2">Multi-line text input field (textarea):</label>
+                                <textarea id="f2" name="textarea" rows="2" cols="20">Default text.
+                                </textarea>
+                            </div>
+                            <div>The following two radio buttons are inside
+                                a <code>fieldset</code> element with a <code>legend</code>:
+                            </div>
+                            <fieldset>
+                                <legend>Legend</legend>
+                                <div><label for="f3"><input id="f3" type="radio" name="radio" value="1"> Radio button 1</label></div>
+                                <div><label for="f4"><input id="f4" type="radio" name="radio" value="2" checked> Radio button 2 (initially checked)</label></div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Check those that apply</legend>
+                                <div><label for="f5"><input id="f5" type="checkbox" name="checkbox"> Checkbox 1</label></div>
+                                <div><label for="f6"><input id="f6" type="checkbox" name="checkbox2" checked> Checkbox 2 (initially checked)</label></div>
+                            </fieldset>
+                            <div>
+                                <label for="f10">
+                                    A <code>select</code> element with <code>size="1"</code>
+                                    (dropdown box):
+                                    <select id="f10" name="select1" size="1">
+                                        <option>one</option>
+                                        <option selected>two (default)</option>
+                                        <option>three</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="f11">A <code>select</code> element with <code>size="3"</code>
+                                (listbox):</label>
+                                <select id="f11" name="select2" size="3">
+                                    <option>one</option>
+                                    <option selected>two (default)</option>
+                                    <option>three</option>
+                                </select>
+                            </div>
+                            <div><label for="f99">Submit button:
+                                <input id="f99" type="submit" name="submit" value="Just a test"></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="tables" class="wrapper tables">
+                <div class="row">
+                    <div class="span7">
+                        <h2>Tables</h2>
+                        <p>The following table has a caption. The first row and the first column
+                            contain table header cells (<code>th</code> elements) only; other cells
+                            are data cells (<code>td</code> elements), with <code>align="right"</code>
+                            attributes:
+                        </p>
+                        <table>
+                            <caption>Sample table: areas of the Nordic countries, in sq km</caption>
+                            <tr>
+                                <th scope="col">Country</th>
+                                <th scope="col">Total area</th>
+                                <th scope="col">Land area</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Denmark</th>
+                                <td> 43,070</td>
+                                <td> 42,370</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Finland</th>
+                                <td>337,030</td>
+                                <td>305,470</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Iceland</th>
+                                <td>103,000</td>
+                                <td>100,250</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Norway</th>
+                                <td>324,220</td>
+                                <td>307,860</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sweden</th>
+                                <td>449,964</td>
+                                <td>410,928</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section id="chars" class="wrapper character">
+                <div class="row">
+                    <div class="span7">
+                        <h2>Character test</h2>
+                        <p>The following table has some sample characters with
+                            annotations. If the browser&#8217;s default font does not
+                            contain all of them, they may get displayed using backup fonts.
+                            This may cause stylistic differences, but it should not
+                            prevent the characters from being displayed at all.
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Char.</th> 
+                                <th>Explanation</th> 
+                                <th>Notes</th>
+                            </tr>
+                            <tr>
+                                <td>Ãª</td> 
+                                <td>e with circumflex</td> 
+                                <td>Latin 1 character, should be ok</td>
+                            </tr>
+                            <tr>
+                                <td>&#8212;</td> 
+                                <td>em dash</td> 
+                                <td>Windows Latin 1 character, should be ok, too</td>
+                            </tr>
+                            <tr>
+                                <td>&#x100;</td> 
+                                <td>A with macron (line above)</td> 
+                                <td>Latin Extended-A character, not present in all fonts</td>
+                            </tr>
+                            <tr>
+                                <td>&Omega;</td> 
+                                <td>capital omega</td> 
+                                <td>A Greek letter</td>
+                            </tr>
+                            <tr>
+                                <td>&#x2212;</td> 
+                                <td>minus sign</td>
+                                <td>Unicode minus</td>
+                            </tr>
+                            <tr>
+                                <td>&#x2300;</td>
+                                <td>diameter sign</td>
+                                <td>relatively rare in fonts</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section id="hypenation" class="wrapper character">
+                <div class="row">
+                    <div class="span5">
+                        <h2>Hyphenation</h2>
+                        <p>In the following, a width setting should cause some hyphenation,
+                            depending on support to various methods of hyphenation.
+                        </p>
+                        <h4>CSS-based hyphenation</h4>
+                        <p class="limited hyphens">Until recently the great majority of naturalists believed that species were immutable productions, and had been separately created. This view has been ably maintained by many authors.
+                        </p>
+                        <h4>Explicit hyphenation hints (soft hyphens)</h4>
+                        <p class="limited">UnÂ­til reÂ­centÂ­ly the great
+                            maÂ­jorÂ­iÂ­ty of natÂ­uÂ­ralÂ­ists
+                            beÂ­lieved that speÂ­cies were
+                            imÂ­muÂ­taÂ­ble
+                            proÂ­ducÂ­tions,
+                            and had been sepÂ­aÂ­rateÂ­ly creÂ­atÂ­ed.
+                            This view has been ably mainÂ­tainÂ­ed by many auÂ­thors.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="span4">
+                    <h3>Created by James Morris</h3>
+                    <small>HTML and copy base on work by Jukka Korpela</small>
+                </div>
+                <div class="span6 offset2">
+                </div>
+            </div>
+        </footer>

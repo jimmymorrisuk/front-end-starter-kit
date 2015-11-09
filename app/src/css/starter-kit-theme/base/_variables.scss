@@ -1,0 +1,80 @@
+/**
+ * Author(s): Your name here
+ *
+ * VARIABLES
+ *
+ * A list or reusable values
+ * Variables following a naming conventions are easiser for identification and reuse across projects
+ * 
+ * Prefixes:
+ * --------
+ * colour: $color, 
+ * transparent colour: $color[variant]-T[percent num],  
+ * font: $font, 
+ * font-size: $size, (mixin if rems in use)
+ * zindex: $z-index,
+ * spacings: $spacing,
+ * line height: $line-height,
+ */
+
+/**
+ * $Paths
+ */
+ //Text variable to reduce image url etc.
+//$path: "/static/";
+
+/**
+ * $Colours
+ */
+
+$color-primary:        #550070; /* Purple */
+$color-primary-d10:    darken($color-primary, 10%); 
+$color-primary-l35:    lighten($color-primary, 35%);
+$color-white:          #fff;    /* White */
+
+$color-off-black:      #2E3137; /* Oil black */
+$color-copy:           #5D5D5D; /* Mid grey */
+$color-light-grey:     #f5f5f5; /* Ash grey */
+
+$color-link:           $color-primary;
+$color-link-hover:     green;
+
+/* Transparency */
+//$color-whiteT50:       
+
+/* $Font family */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300|Ubuntu:500);
+$font-roboto: 'Roboto', sans-serif;
+$font-ubuntu: 'Ubuntu', sans-serif;
+
+
+/* $Font sizes */
+$size-base: 62.5%; //Allows 10px = 1em: all sizes px / 10 for REM conversion
+
+$size-su:    5rem;   
+$size-xxl:   4.3rem;
+$size-xl:    3.6rem; 
+$size-l:     2.9rem;
+$size-ml:    2.5rem; 
+$size-m:     2.2rem;
+$size-ms:    1.9rem; 
+$size-s:     1.8rem; 
+$size-ss:    1.6rem;
+$size-sss:   1.2rem;
+
+
+/* $Z-Indexes */
+
+//$z-index1:   100; //Comment where used
+//$z-index2:   200; 
+
+
+/* $Spacings */
+
+//$spacing-xl:           2em; 
+
+
+/* $Line heights */
+$line-height:          1.5em;
+$heading-l-height:     1em;

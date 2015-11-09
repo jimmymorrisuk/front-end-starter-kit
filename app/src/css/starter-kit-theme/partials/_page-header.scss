@@ -1,0 +1,61 @@
+/**
+ * Author(s): James Morris
+ * HEADER
+ * 
+ * Site header styles
+ * 
+ */
+
+@import "base/_variables";
+@import "partials/_gradients";
+
+header.page-header {
+    color: $color-white;
+    width: 100%;
+    padding: 1em 0.45em;
+    position: fixed;
+    top: 0;
+    @include diagonal-top-down-gradient($color-primary, $color-primary-d10);
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .logo { 
+        h1 {
+            font-size: $size-l;
+            letter-spacing: 0.05em;
+            margin: 0;
+            padding: 0.45em;
+        }
+        a h1 {
+            color: $color-light-grey;
+            border-bottom: 3px solid transparent;
+            &:hover {
+                color: $color-white;
+                border-bottom: 3px solid $color-white;
+            }
+        }
+    }
+    nav.site-navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 2em;
+        margin-top: 0.7em;
+        li {
+            display: inline-block;
+            margin-left: 0.55em;
+        }
+        a {
+            color: $color-primary-l35;
+            letter-spacing: 0.15em;
+            border: 2px solid $color-primary-l35;
+            padding: 0.45em;
+            display: block;
+            &:hover {
+                color: $color-white;
+                border-color: $color-white;
+            }
+        }
+    }
+}

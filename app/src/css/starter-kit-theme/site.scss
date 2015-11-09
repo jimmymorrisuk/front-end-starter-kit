@@ -1,0 +1,49 @@
+/**
+ * Author(s): James Morris
+ * SITE
+ * 
+ * Just to present things nicely.
+ * REMOVE THIS BEFORE PRODUCTION (TODO: MAKE GULP REMOVE THIS)
+ * 
+ */
+
+@import "base/_normalize";
+@import "partials/_page-header";
+@import "partials/_typography";
+@import "partials/_article";
+
+/* HTML tag */
+html {
+    font-size: $size-base;
+}
+
+/* Body */ 
+
+body {
+    background-color: $color-light-grey;
+    color: $color-copy;
+    font-family: $font-roboto;
+}
+
+
+/* Layout */
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    font-size: $size-ss;
+}
+
+main .wrapper {
+    margin-top: 85px; //Adjust for fixed header overlap
+    padding: 2em;
+    background-color: $color-white;
+    color: $color-copy;
+}
+
+.introduction {
+    width: 65%;
+}

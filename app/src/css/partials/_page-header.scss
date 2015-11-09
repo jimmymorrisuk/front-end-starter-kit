@@ -1,0 +1,17 @@
+/**
+ * Author(s): James Morris
+ * HEADER
+ * 
+ * Site header styles
+ * 
+ */
+
+// EXAMPLE - Add your code here
+
+@import "base/_variables";
+
+header.page-header {
+    background-color: $color-off-black;
+    color: $color-white;
+}
+
