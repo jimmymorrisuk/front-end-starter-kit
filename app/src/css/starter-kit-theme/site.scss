@@ -9,6 +9,7 @@
 
 @import "base/_normalize";
 @import "partials/_page-header";
+@import "partials/_page-footer";
 @import "partials/_typography";
 @import "partials/_article";
 
@@ -45,5 +46,5 @@ main .wrapper {
 }
 
 .introduction {
-    width: 65%;
+    width: 55%;
 }

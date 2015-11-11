@@ -1,0 +1,21 @@
+/**
+ * Author(s): James Morris
+ * FOOTER
+ * 
+ * Site footer styles
+ * 
+ */
+ 
+@import "base/_variables";
+
+footer.page-footer {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    a {
+        color: $color-light-grey;
+        text-decoration: underline;
+        &:hover {
+            color: $color-copy;
+        }
+    } 
+}
