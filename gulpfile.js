@@ -19,7 +19,7 @@ var sourcemaps = require('gulp-sourcemaps');
 //Minify JS files for performance
 var uglify = require('gulp-uglify');
 //Minify CSS files for performance
-var minifyCss = require('gulp-minify-css');
+var minifyCSS = require('gulp-minify-css');
 //Rename files
 var rename = require('gulp-rename');
 
@@ -31,7 +31,7 @@ var target = './app/dist'; //Distribution Folder path
 
 //TASKS
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass','markup','scripts', 'images', 'fonts'], function() {
+gulp.task('serve', ['fonts','markup','scripts', 'images', 'php', 'sass'], function() {
 
     //Tell BS what folder to serve
     browserSync.init({
@@ -39,11 +39,13 @@ gulp.task('serve', ['sass','markup','scripts', 'images', 'fonts'], function() {
     });
 
     //Watching for these changes and reloading the browser
-    gulp.watch(source + "/css/**/*.{sass,scss}", ['sass']).on('change', browserSync.reload);
+    gulp.watch(source + "/fonts/**", ['fonts']).on('change', browserSync.reload);
     gulp.watch(source + "/js/**/*.js", ['scripts']).on('change', browserSync.reload);
     gulp.watch(source + "/*.html", ['markup']).on('change', browserSync.reload);
-    gulp.watch(source + "/fonts/**", ['fonts']).on('change', browserSync.reload);
+    gulp.watch(source + "/*.php", ['php']).on('change', browserSync.reload);
+    gulp.watch(source + "/**/*.php", ['php']).on('change', browserSync.reload);
     gulp.watch(source + "/img/**", ['images']).on('change', browserSync.reload);
+    gulp.watch(source + "/css/**/*.{sass,scss}", ['sass']).on('change', browserSync.reload);
 });
 
 // Sass task
@@ -57,7 +59,7 @@ gulp.task('sass', function() {
                 cascade: false
             }))
             //Make it small
-            .pipe(minifyCss())
+            .pipe(minifyCSS())
             .pipe(rename({
                 suffix: '.min'
             }))
@@ -69,6 +71,13 @@ gulp.task('sass', function() {
 // Markup task
 gulp.task('markup', function() {
     return gulp.src(source + "/*.html")
+        .pipe(gulp.dest(target))
+        .pipe(browserSync.stream());
+});
+
+// PHP task
+gulp.task('php', function() {
+    return gulp.src(source + "/**/*.php")
         .pipe(gulp.dest(target))
         .pipe(browserSync.stream());
 });
