@@ -19,7 +19,7 @@ var sourcemaps = require('gulp-sourcemaps');
 //Minify JS files for performance
 var uglify = require('gulp-uglify');
 //Minify CSS files for performance
-var minifyCSS = require('gulp-minify-css');
+var minifyCSS = require('gulp-cssnano');
 //Rename files
 var rename = require('gulp-rename');
 
@@ -59,7 +59,7 @@ gulp.task('sass', function() {
                 cascade: false
             }))
             //Make it small
-            .pipe(minifyCSS())
+            .pipe(cssnano())
             .pipe(rename({
                 suffix: '.min'
             }))
