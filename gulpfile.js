@@ -19,7 +19,7 @@ var sourcemaps = require('gulp-sourcemaps');
 //Minify JS files for performance
 var uglify = require('gulp-uglify');
 //Minify CSS files for performance
-var minifyCSS = require('gulp-cssnano');
+var cssnano = require('gulp-cssnano');
 //Rename files
 var rename = require('gulp-rename');
 
