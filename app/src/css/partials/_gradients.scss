@@ -1,0 +1,20 @@
+/**
+ * Author(s): James Morris
+ * GRADIENTS
+ * 
+ * A list of gradients used around the site
+ * 
+ */
+
+
+@mixin diagonal-top-down-gradient($color-one, $color-two) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$color-one+0,2e003d+100 */
+    background: $color-one; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  $color-one 0%, $color-two 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$color-one), color-stop(100%,$color-two)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  $color-one 0%,$color-two 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  $color-one 0%,$color-two 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  $color-one 0%,$color-two 100%); /* IE10+ */
+    background: linear-gradient(135deg,  $color-one 0%,$color-two 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

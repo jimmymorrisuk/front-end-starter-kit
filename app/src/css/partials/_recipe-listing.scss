@@ -1,0 +1,96 @@
+/**
+ * Author(s): James Morris
+ * RECIPE LISTINGS
+ * 
+ * Recipe main listing style
+ * 
+ */
+
+@import "base/_variables";
+@import "partials/_mixins";
+@import "partials/_gradients";
+@import "../../../../bower_components/susy/sass/susy";
+
+
+.recipe-listing__main-heading {
+	text-align: center;
+	text-transform: uppercase;
+	&:after {
+		content: "";
+		display: block;
+		border-bottom: 4px solid $color-off-black;
+		width: 7%;
+		margin: 0.25em auto;
+	}
+}
+
+.recipe-listing {
+	padding: 2em 0;
+}
+
+.recipe-listing__recipe-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: $color-white;
+	.recipe-listing__list-item {
+		@include span(3);
+		@include aspect-ratio("recipe-listing__content", 1, 1);
+		background-size: 100%;
+		background-position: center center;
+		position: relative;
+		margin-bottom: 1em;
+		box-shadow: 0 3px 3px $color-blackT60;
+		border-radius: 3px;
+		&:nth-child(4n+0) {
+			margin-right: 0;
+		}
+		.recipe-listing__link {
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: $color-white;
+			text-decoration: none;
+		}
+		.recipe-listing__content {
+			@include diagonal-top-down-gradient($color-blackT60, transparent);
+			padding: 1em;
+			text-shadow: 0 0 10px $color-blackT50;
+		}
+		.recipe-listing__meta {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 1em;
+		}
+		.recipe-listing__content .recipe-listing__title {
+			margin: 0;
+			margin-bottom: 1.5em;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: $font-rub;
+			font-size: $size-ms;
+			&:after {
+				content: "";
+				display: block;
+				border-bottom: 3px solid $color-white;
+				width: 35%;
+				margin: 0.25em auto;
+			}
+		}
+		.recipe-listing__content span {
+			font-weight: 300;
+			font-size: $size-ss;
+			text-align: center;
+			color: $color-white;
+			background-color: $color-blackT50;
+			padding: 0.2em;
+			border-radius: 3px;
+			min-width: 24px;
+			display: inline-block;
+
+		}		
+	}
+}
+

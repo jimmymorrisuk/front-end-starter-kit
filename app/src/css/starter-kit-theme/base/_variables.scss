@@ -78,3 +78,16 @@ $size-sss:   1.2rem;
 /* $Line heights */
 $line-height:          1.5em;
 $heading-l-height:     1em;
+
+
+/* $Grid */
+
+$susy: (
+  columns: 12,
+  gutters: 0.25,
+  math: fluid,
+  output: float,
+  container: 1200px,
+  box-sizing: border-box,
+  last-flow: from
+);

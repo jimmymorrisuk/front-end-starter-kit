@@ -1,23 +1,23 @@
 /**
  * Author(s): James Morris
- * HEADER
+ * FOOTER
  * 
- * Site header styles
+ * Site footer styles
  * 
  */
 
-// EXAMPLE - Add your code here
-
 @import "base/_variables";
 
-.page-header {
+.page-footer {
 	background: $color-grey-green;
 	.wrapper {
 		padding: 3em;
 	}
 }
 
-.page-header__logo-heading {
+.page-footer__message {
 	text-align: center;
-	font-size: $size-su;
+	font-size: $size-xl;
+	margin: 0;
+	margin-top: -79px;
 }

@@ -1,0 +1,25 @@
+/**
+ * Author(s): James Morris
+ * MIXINS
+ * 
+ * Site mixins
+ * 
+ */
+
+ @mixin aspect-ratio($content-class, $aspect-width, $aspect-height) {
+    position: relative;
+    &:before{
+        display: block;
+        content: " ";
+        width: 100%;
+        padding-top: ($aspect-height / $aspect-width) * 100%;
+    }
+
+    > .#{$content-class} {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

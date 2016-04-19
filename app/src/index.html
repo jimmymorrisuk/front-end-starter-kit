@@ -3,8 +3,7 @@
 <head>
     <title>Front end starter kit</title>
     <link rel="stylesheet" type="text/css" href="css/site.min.css">
-    <!-- Front end starter kit theme - Remove this -->
-    <link rel="stylesheet" type="text/css" href="css/starter-kit-theme/site.min.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.min.css">
 </head>
 <body>
     <header class="page-header">
@@ -21,30 +20,30 @@
     </header>
     <main class="page-body">
         <div class="wrapper">
-            <div class="introduction">
-                <h2 class="h1">Welcome to the Front end starter kit</h2>
-                <p>This kit is designed to get your front end projects up and running that bit quicker, while balancing the speed of setup with useful defaults, without bloating the project.</p>
-                <p>It's not bootstrap or foundation or any other CSS libraries, of mixins for a design you've never seen. This is really truly is a bootstrapper, of just the basics and some placeholders. The rest you add or remove yourself. The idea is that it's just the things used time and again.</p>
-                <h2>Make yourself at home</h2>
-                <p>This kit comes with the following features to give you a boost.
-                <ul class="basic-list feature-list">
-                    <li>Gulp work flow, for those laborious tasks</li>
-                    <li>SASS setup for clever, more concise CSS</li>
-                    <li>CSS template files to encourage common writing style and best practice</li>
-                    <li>A basic <a href="/style-guide.html">style guide</a> for general HTML elements</li>
-                </ul>
-                <h2>Style guide</h2>
-                <p>
-                    The style guide included, lists bunch of HTML elements that you can style to make sure even on the most basic site elements are going to behave and look as you want them to.
-                </p>
-                <p>
-                    You can adapt the style guide as you see fit, perhaps on large projects using it as a test bed for components. Using partials to manage the SASS for them, loading them only on template pages where they are needed to reduce load. 
-            </div>
-        </div>
+          <div class="row .recipe-listing">
+          	<h2 class="recipe-listing__main-heading">Recipes</h2>
+			<ul class="recipe-listing__recipe-list">
+				<li class="recipe-listing__list-item" style="background-image: url('img/soup.jpg');">
+<!-- 					<a href="#" class="recipe-listing__link"> -->
+						<div class="recipe-listing__content">
+							<h2 class="recipe-listing__title">
+								Excellent soup
+							</h2>
+							<div class="recipe-listing__meta">
+								<span>
+									Prep 5mins
+								</span>
+								<span>
+									Cook 25mins
+								</span>
+							</div>					
+						</div>
+<!-- 					</a> -->
+				</li>
+			</ul>
+          </div>  
+    	<div>
     </main>
-    <aside class="sidebar">
-        
-    </aside>
     <footer class="page-footer">
         <div class="wrapper">
             Built by <a href="http://twitter.com/jimmymorrisuk">@JimmyMorrisUK</a> at <a href="http://twitter.com/bunnyfootsays">Bunnyfoot</a>

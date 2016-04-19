@@ -1,5 +1,5 @@
 /**
- * Author(s): -YOUR NAME HERE-
+ * Author(s): James Morris
  * SITE
  * 
  * Site wide styles
@@ -7,3 +7,39 @@
  */
 
 @import "base/_normalize";
+@import "base/_grid";
+@import "partials/_page-header";
+@import "partials/_page-footer";
+
+html {
+	font-size: $size-base;
+	background-color: $color-white;
+}
+
+body {
+	font-size: $size-s;
+	font-family: $font-open;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+	font-size: $size-ms;
+	font-weight: 300;
+}
+
+h1,
+.h1 {
+	font-size: $size-l;
+}
+
+h2 {
+   font-size: $size-ml;
+}
+
+h3 {
+	font-size: $size-m;
+}

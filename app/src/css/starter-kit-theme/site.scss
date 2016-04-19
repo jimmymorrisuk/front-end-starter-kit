@@ -8,6 +8,7 @@
  */
 
 @import "base/_normalize";
+@import "base/_grid";
 @import "partials/_page-header";
 @import "partials/_page-footer";
 @import "partials/_typography";
@@ -29,10 +30,6 @@ body {
 
 /* Layout */
 
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 main {
     font-size: $size-ss;
@@ -48,3 +45,4 @@ main .wrapper {
 .introduction {
     width: 55%;
 }
+

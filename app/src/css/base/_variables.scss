@@ -31,6 +31,14 @@ $color-primary:        #550070; /* Purple */
 $color-white:          #fff;    /* White */
 $color-off-black:      #2E3137; /* Oil black */
 
+$color-grey-green:     #E9F0EA; /* Light green-grey */
+
+$color-blackT60:       transparentize(#000, 0.6);
+$color-blackT50:       transparentize(#000, 0.5);
+$color-blackT35:       transparentize(#000, 0.35);
+$color-blackT20:       transparentize(#000, 0.2);
+$color-blackT10:       transparentize(#000, 0.1);
+
 $color-link:           $color-primary;
 $color-link-hover:     green;
 
@@ -38,21 +46,24 @@ $color-link-hover:     green;
 //$color-whiteT50:       
 
 /* $Font family */
-//$font-arial: 'Arial', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500|Open+Sans:400,700,300);
+
+$font-open: 'Open Sans', sans-serif;
+$font-rub: 'Rubik', sans-serif;
 
 /* $Font sizes */
 $size-base: 62.5%; //Allows 10px = 1em: all sizes px / 10 for REM conversion
 
-// $size-su:    5rem;   //Size = 50px
+$size-su:    5rem;   //Size = 50px
 $size-xxl:   4.3rem;
 $size-xl:    3.6rem; //Mobile H1
 $size-l:     2.9rem;
-// $size-ml:    2.5rem; //Mobile H2
+$size-ml:    2.5rem; //Mobile H2
 $size-m:     2.2rem;
-// $size-ms:    1.9rem; //Mobile H3
+$size-ms:    1.9rem; //Mobile H3
 $size-s:     1.8rem; //Base size = 18px Mobile H4
-// $size-ss:    1.6rem;
-// $size-sss:   1.2rem;
+$size-ss:    1.6rem;
+$size-sss:   1.2rem;
 
 
 /* $Z-Indexes */
@@ -68,3 +79,16 @@ $size-s:     1.8rem; //Base size = 18px Mobile H4
 
 /* $Line heights */
 //$line-height:          1.5em;
+
+
+/* $Grid */
+
+$susy: (
+  columns: 12,
+  gutters: 0.25,
+  math: fluid,
+  output: float,
+  container: 1200px,
+  box-sizing: border-box,
+  last-flow: from
+);
