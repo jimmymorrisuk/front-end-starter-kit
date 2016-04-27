@@ -52,7 +52,7 @@ Quite often you can have issues with npm and access permissions. First try runni
 
 **Segmentation fault: 11 - error**
 
-I had this error while using Gulp. I am not exactly sure what caused it but agreeing to XCode's license agreement seemed to have solved the issue.
+Not sure what exactly triggers this issue. However I seems to be linked to the SASS package. See more here: https://github.com/gulpjs/gulp/issues/785
 
 License
 -----------
