@@ -57,8 +57,10 @@ I had this error while using Gulp. I am not exactly sure what caused it but agre
 License
 -----------
   
-Bunnyfoot Front end starter kit
-Copyright (C) 2015 Bunnyfoot Ltd.
+Front end starter kit. 
+
+Modified from the Bunnyfoot starter kit 2015.
+Copyright (C) 2016 James Morris.
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
